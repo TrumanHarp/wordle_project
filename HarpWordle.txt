@@ -1,0 +1,21 @@
+TrumanHarpWordle
+10
+8
+4
+4
+true
+amass
+I R A T E 
+C R A N 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+B B G B B 
+E E E E E 
+E E E E E 
+E E E E E 
+E E E E E 
+E E E E E 
+1 4
+0 0 0 1 2 5 

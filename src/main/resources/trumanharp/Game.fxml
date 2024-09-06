@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ancPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="432.0" style="-fx-background-color: #2c2d2e;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label graphicTextGap="6.0" layoutX="132.0" layoutY="14.0" text="WORDLE" textAlignment="CENTER" textFill="#e1e6eb">
+         <font>
+            <Font name="Meiryo UI Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="bMainMenu" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="15.0" layoutY="21.0" mnemonicParsing="false" onAction="#goMainMenu" prefHeight="35.0" prefWidth="62.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="MAIN MENU" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="30.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <Button fx:id="bSave" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="324.0" layoutY="21.0" mnemonicParsing="false" onAction="#save" prefHeight="35.0" prefWidth="47.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="SAVE" textAlignment="CENTER" wrapText="true" AnchorPane.rightAnchor="61.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <GridPane alignment="CENTER" layoutX="46.0" layoutY="78.0" prefHeight="432.0" prefWidth="336.0" style="-fx-hgap: 5; -fx-vgap: 5; -fx-padding: 5;" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="46.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="20.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="186.0" minHeight="10.0" percentHeight="16.67" prefHeight="110.0" vgrow="SOMETIMES" />
+          <RowConstraints percentHeight="16.67" />
+            <RowConstraints maxHeight="133.0" minHeight="10.0" percentHeight="16.67" prefHeight="119.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" percentHeight="16.67" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" percentHeight="16.67" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="48.0" minHeight="10.0" percentHeight="16.67" prefHeight="48.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="b01" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b00" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: #2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b02" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b03" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b04" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b10" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b11" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b12" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b13" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b14" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b20" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b21" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b22" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b23" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b24" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b30" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b31" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b32" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b33" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b34" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b40" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b41" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b42" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b43" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b44" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b50" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b51" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b52" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b53" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+            <Label fx:id="b54" alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="73.0" style="-fx-background-color: 2c2d2e; -fx-border-color: #5a5c5e; -fx-border-width: 3;" textAlignment="CENTER" textFill="#e1e6eb" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Arial Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </GridPane>
+      <Label fx:id="infoBox" alignment="CENTER" layoutX="46.0" layoutY="527.0" prefHeight="42.0" prefWidth="340.0" style="-fx-line-spacing: -6;" textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="46.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="527.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <VBox layoutY="588.0" prefHeight="180.0" prefWidth="432.0">
+         <children>
+            <GridPane prefHeight="56.0" prefWidth="339.0" style="-fx-hgap: 3;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="bQ" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="Q" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bW" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="W" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bE" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="E" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bR" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="R" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bT" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="T" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bY" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="Y" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bU" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="U" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bI" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="I" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bO" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="O" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bP" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="P" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="13.0" right="13.0" top="3.0" />
+               </padding>
+            </GridPane>
+            <GridPane prefHeight="56.0" prefWidth="339.0" style="-fx-hgap: 3;">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="5.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="bA" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="A" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bS" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="S" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bD" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="D" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bF" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="F" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bG" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="G" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bH" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="H" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bJ" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="J" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bK" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="K" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bL" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="L" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="13.0" right="13.0" top="3.0" />
+               </padding>
+            </GridPane>
+            <GridPane prefHeight="56.0" prefWidth="339.0" style="-fx-hgap: 3;">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="15.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="bEnter" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#enterKey" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="ENTER" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bZ" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="Z" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bX" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="X" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bC" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="C" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bV" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="V" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bB" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="B" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bN" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="N" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bM" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#keyboardPress" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="M" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Arial" size="24.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button fx:id="bDelete" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" mnemonicParsing="false" onAction="#deleteKey" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="DELETE" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="13.0" right="13.0" top="3.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="endingPopupBackground" cache="true" layoutX="24.0" layoutY="100.0" opacity="0.75" prefHeight="300.0" prefWidth="384.0" style="-fx-background-color: e1e6eb; -fx-border-color: #5a5c5e; -fx-border-width: 3;" visible="false" />
+      <AnchorPane fx:id="endingPopup" cache="true" disable="true" layoutX="24.0" layoutY="100.0" prefHeight="300.0" prefWidth="384.0" visible="false">
+         <children>
+            <Label fx:id="outcome" alignment="CENTER" graphicTextGap="6.0" layoutX="29.0" layoutY="14.0" prefHeight="49.0" prefWidth="327.0" text="YOU WON" textAlignment="CENTER" textFill="#2c2d2e">
+               <font>
+                  <Font name="Meiryo UI Bold" size="36.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label fx:id="moreInfo" alignment="CENTER" graphicTextGap="6.0" layoutX="29.0" layoutY="63.0" prefHeight="26.0" prefWidth="327.0" text="It took you X Guesses" textAlignment="CENTER" textFill="#2c2d2e">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Button fx:id="bMainMenu1" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="127.0" layoutY="125.0" mnemonicParsing="false" onAction="#goMainMenu" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #5a5c5e; -fx-padding: 0;" text="Main Menu" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="bNewGame" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="127.0" layoutY="175.0" mnemonicParsing="false" onAction="#nextGame" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #5a5c5e; -fx-padding: 0;" text="Next Game" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+            <Button fx:id="bShowStats" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="127.0" layoutY="225.0" mnemonicParsing="false" onAction="#showStats" prefHeight="35.0" prefWidth="130.0" style="-fx-background-color: #5a5c5e; -fx-padding: 0;" text="Show Statistics" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="bRestart" alignment="CENTER" contentDisplay="TEXT_ONLY" graphicTextGap="0.0" layoutX="378.0" layoutY="21.0" mnemonicParsing="false" onAction="#restart" prefHeight="35.0" prefWidth="47.0" style="-fx-background-color: #939699; -fx-padding: 0;" text="RESTART" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="378.0">
+         <font>
+            <Font name="Arial" size="10.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+   </children>
+</AnchorPane>
